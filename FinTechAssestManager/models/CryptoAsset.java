@@ -22,6 +22,6 @@ public class CryptoAsset extends Asset implements Transferable {
             throw new InsufficientFundsException("Insufficient balance for this transaction.", deficit);
         }
         balance -= totalCost;
-        recordTransaction ("Transfer successful: $" + amount + " to " + toWalletAddress + ". Network fee appplied: $" + networkFee);
+        recordTransaction ("Transfer successful: $" + amount + " to " + toWalletAddress + ". Network fee applied: $" + networkFee);
     }
 }
